@@ -1,4 +1,17 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+## Bingebuddy
+
+This is a [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html) project targeting Android, iOS, Desktop. This is more like my journey while learning kotlin multiplatform. It uses [The Movie Database](https://www.themoviedb.org/) for showing all the information related to movies and TV shows.
+
+### API Used
+
+- The Movie Database - [The Movie Database API](https://www.themoviedb.org/documentation/api)
+
+### Design inspirations
+
+- [Movie Streaming App, UI Kit](https://dribbble.com/shots/22427925-Movie-Streaming-App-UI-Kit)
+- [Movie Streaming Mobile IOs App](https://dribbble.com/shots/20852069-Movie-Streaming-Mobile-IOS-App)
+
+### Folder structure
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
@@ -12,6 +25,9 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
 
 * `/shared` is for the code that will be shared between all targets in the project.
   The most important subfolder is `commonMain`. If preferred, you can add code to the platform-specific folders here too.
+
+* `/ui/designsystem` is for code related to design system of this project. Since I will try to implement atomic design system as much as I can in this app, this folder will contain atoms, molecules, app themes(colors, types and shapes)
+
 
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
