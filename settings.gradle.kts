@@ -30,4 +30,9 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":shared")
-include(":ui:designsystem")
+include(":core:designsystem")
+include(":core:logging")
+include(":core:base")
+include(":core:config")
+include(":data:movies")
+include(":feature:discover")
