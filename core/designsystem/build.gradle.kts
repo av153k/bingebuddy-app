@@ -30,8 +30,17 @@ kotlin {
     jvm()
 
     sourceSets {
+        androidMain.dependencies {
+            implementation(compose.runtime)
+            implementation(compose.foundation)
+            implementation(compose.material)
+            implementation(compose.ui)
+        }
         commonMain.dependencies {
-            // put your Multiplatform dependencies here
+            implementation(compose.runtime)
+            implementation(compose.foundation)
+            implementation(compose.material)
+            implementation(compose.ui)
         }
     }
 }
@@ -46,4 +55,7 @@ android {
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
+}
+dependencies {
+    implementation(libs.androidx.runtime.android)
 }

@@ -7,8 +7,12 @@ import androidx.compose.ui.Modifier
 
 
 @Composable
-fun DiscoverScreen(modifier: Modifier = Modifier) {
-    Scaffold {
-        innerPadding -> Text("Discover Screen")
-    }
+expect fun DiscoverScreen()
+
+
+expect class DiscoverScreen {
+
+    @Composable
+    fun View()
+
 }
